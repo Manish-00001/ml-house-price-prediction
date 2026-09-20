@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 # =========================================================
 
 model = joblib.load(
-    os.path.join(BASE_DIR, "model_best.joblib")
+    os.path.join(BASE_DIR, "artifacts", "model_best.joblib")
 )
 
 # =========================================================
@@ -18,7 +18,7 @@ model = joblib.load(
 # =========================================================
 
 scaler_data = joblib.load(
-    os.path.join(BASE_DIR, "scaler.joblib")
+    os.path.join(BASE_DIR, "artifacts", "scaler.joblib")
 )
 
 scaler = scaler_data["scaler"]
